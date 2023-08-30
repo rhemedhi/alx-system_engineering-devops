@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -d -a [^.]* * | sort | paste -sd, - | echo
+ls -A1 -v --group-directories-first | sed ':a;N;$!ba;s/\n/, /g;s/,$/\//;s/^\(\.,\.\),/\1\n/'
