@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -d -a [^.]* * | sort | paste -sd, - | printf '\n'
+ls -d -a [^.]* * | sort | paste -sd, - | echo
