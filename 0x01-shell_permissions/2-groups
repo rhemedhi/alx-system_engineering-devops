@@ -1,2 +1,2 @@
 #!/bin/bash
-groups
+groups | cut -d' ' -f3-
